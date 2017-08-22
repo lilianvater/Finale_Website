@@ -17,33 +17,45 @@ body{
 
 .hintergrund{
   display: block;
-  /*position: absolute;
-  z-index: 1;*/
+  z-index: -10;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  min-height:100%;
   height:100%;
-  width: auto;
-}
-/*
-.content{
-  z-index: 2;
-  position: absolute;
 
 }
+
+.scrollbereich{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+z-index: 2;
+
+}
+
+
 
 .kontakt{
-  width: 5%;
+  width: 50px;
+  height: 100%;
   margin-top: 50px;
   margin-left: 300px;
-  float: left;
+  z-index: 2;
+  position: absolute;
+  display: block;
 }
 
 .sonstiges{
   width: 10%;
   margin-top: 0;
-  margin-right: 130px;
-  float: right;
+  margin-left: 400px;
+  z-index: 3;
+  position: absolute;
+  display: block;
 }
 
 figcaption {
