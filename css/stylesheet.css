@@ -40,19 +40,18 @@ z-index: 2;
 
 
 .kontakt{
-  width: 50px;
-  height: 100%;
-  margin-top: 50px;
-  margin-left: 300px;
+  height: 7%;
+  margin-top: 5%;
+  margin-left: 35%;
   z-index: 2;
   position: absolute;
   display: block;
 }
 
 .sonstiges{
-  width: 10%;
+  height: 17%;
   margin-top: 0;
-  margin-left: 400px;
+  margin-left: 67%;
   z-index: 3;
   position: absolute;
   display: block;
@@ -65,7 +64,7 @@ figcaption {
   text-align: center;
   font-size: 10pt;
   font-family: sans-serif;
-  background-color: rgb(213, 233, 239, 0.5)
+  background-color: rgb(213, 233, 239)
 }
 
 figure:hover figcaption {
