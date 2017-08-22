@@ -2,19 +2,30 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
 body{
   background: rgb(159, 181, 187);
 }
 
 
 .hintergrund{
-  position: absolute;
+  display: block;
+  /*position: absolute;
+  z-index: 1;*/
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  z-index: 1;
+  height:100%;
+  width: auto;
 }
-
+/*
 .content{
   z-index: 2;
   position: absolute;
@@ -22,14 +33,14 @@ body{
 }
 
 .kontakt{
-  width: 10%;
+  width: 5%;
   margin-top: 50px;
   margin-left: 300px;
   float: left;
 }
 
 .sonstiges{
-  width: 14%;
+  width: 10%;
   margin-top: 0;
   margin-right: 130px;
   float: right;
@@ -42,6 +53,7 @@ figcaption {
   text-align: center;
   font-size: 10pt;
   font-family: sans-serif;
+  background-color: rgb(213, 233, 239, 0.5)
 }
 
 figure:hover figcaption {
