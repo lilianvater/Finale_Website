@@ -57,14 +57,85 @@ z-index: 2;
   display: block;
 }
 
+.projekte{
+  height: 17%;
+  margin-top: 19%;
+  margin-left: 26%;
+  z-index: 4;
+  position: absolute;
+  display: block;
+}
+
+.uebermich{
+  height: 22%;
+  margin-top: 23.5%;
+  margin-left: 39%;
+  z-index: 5;
+  position: absolute;
+  display: block;
+}
+
+.malerei{
+  height: 21%;
+  margin-top: 31%;
+  margin-left: 57%;
+  z-index: 6;
+  position: absolute;
+  display: block;
+}
+
+.schnitte{
+  height: 20%;
+  margin-top: 20.7%;
+  margin-left: 75%;
+  z-index: 7;
+  position: absolute;
+  display: block;
+}
+
+.zeichnungen{
+  height: 15%;
+  margin-top: 29%;
+  margin-left: 17%;
+  z-index: 8;
+  position: absolute;
+  display: block;
+}
+
+.illu{
+  height: 20.5%;
+  margin-top: 36.5%;
+  margin-left: 26.2%;
+  z-index: 9;
+  position: absolute;
+  display: block;
+}
+
 figcaption {
   opacity: 0;
   bottom: -3em;
   transition: all 1s ease;
   text-align: center;
-  font-size: 10pt;
-  font-family: sans-serif;
-  background-color: rgb(213, 233, 239)
+  font-size: 13pt;
+  font-family: 'Cabin Sketch', sans-serif;
+  background-color: rgb(50, 50, 50, 0.5);
+}
+
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color: black;
+}
+
+a:active{
+  color: black;
 }
 
 figure:hover figcaption {
