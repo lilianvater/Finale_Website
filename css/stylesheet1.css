@@ -7,7 +7,6 @@ html, body {
   padding:0;
   width:100%;
   height:100%;
-  overflow:hidden;
 }
 
 body{
@@ -70,4 +69,54 @@ h1{
   font-family: 'Open Sans', sans-serif;
   font-size: 13pt;
   color: rgb(50, 50, 50);
+  margin-bottom: 100px;
+}
+
+.einleitungstext{
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+.adressebild{
+  width: 200px;
+  float: left;
+  margin-left: 195px;
+}
+
+.adresse{
+  float: right;
+  margin-right: 345px;
+  padding-top: 25px;
+}
+
+.emailbild{
+  width: 200px;
+  float: left;
+  margin-left: 345px;
+  clear: both;
+}
+
+.email{
+  float: right;
+  margin-right: 285px;
+  padding-top: 60px;
+}
+
+.telebild{
+  width: 200px;
+  float: left;
+  margin-left: 495px;
+  clear: both;
+}
+
+.tele{
+  float: right;
+  margin-right: 200px;
+  padding-top: 60px;
+}
+
+.gecleart{
+  clear: both;
 }
