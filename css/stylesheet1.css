@@ -32,13 +32,17 @@ a:active{
 }
 
 .rund{
+  display: block;
+  border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+}
+
+.start{
   float: left;
   margin-left: 80px;
   margin-top: 20px;
   width: 150px;
-  border-radius: 100%;
--webkit-border-radius: 100%;
--moz-border-radius: 100%;
 }
 
 .name{
@@ -61,8 +65,9 @@ a:active{
 h1{
   font-family: 'Cabin Sketch', sans-serif;
   text-align: center;
-  font-size: 60pt;
+  font-size: 50pt;
   color: rgb(50, 50, 50);
+  font-weight: 700;
 }
 
 .text{
@@ -80,19 +85,19 @@ h1{
 }
 
 .adressebild{
-  width: 200px;
+  width: 150px;
   float: left;
   margin-left: 195px;
 }
 
 .adresse{
   float: right;
-  margin-right: 345px;
-  padding-top: 25px;
+  margin-right: 395px;
+
 }
 
 .emailbild{
-  width: 200px;
+  width: 150px;
   float: left;
   margin-left: 345px;
   clear: both;
@@ -100,12 +105,12 @@ h1{
 
 .email{
   float: right;
-  margin-right: 285px;
-  padding-top: 60px;
+  margin-right: 320px;
+  padding-top: 40px;
 }
 
 .telebild{
-  width: 200px;
+  width: 150px;
   float: left;
   margin-left: 495px;
   clear: both;
@@ -113,8 +118,8 @@ h1{
 
 .tele{
   float: right;
-  margin-right: 200px;
-  padding-top: 60px;
+  margin-right: 250px;
+  padding-top: 40px;
 }
 
 .gecleart{
