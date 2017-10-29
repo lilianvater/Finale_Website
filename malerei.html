@@ -20,6 +20,141 @@
 <div class="content">
   <h1>Malerei</h1>
 
+        <div>
+
+          <h2>Gesichter</h2>
+
+              <div class="text einleitungstext">
+                <p>Menschen und im Besonderen ihre Gesichter haben mich schon immer fasziniert, weshalb sich unter meinen Arbeiten auch immer wieder Portraits finden lassen. Dabei mit den Farben zu spielen, macht mir in der Malerei besonderen Spaß.</p>
+              </div>
+
+
+                  <div class="slideshow-container">
+                       <div class="mySlides fade">
+                         <img src="images/malerei/portrait.jpg" style="width:100%">
+                         <div class="captiontext">Selbstportrait, Acryl auf Papier, 2015</div>
+                       </div>
+
+                       <div class="mySlides fade">
+                         <img src="images/malerei/portrait1.jpg" style="width:100%">
+                         <div class="captiontext">Anja, Acryl auf Papier, 2015</div>
+                       </div>
+
+                       <div class="mySlides fade">
+                         <img src="images/malerei/portrait2.jpg" style="width:100%">
+                         <div class="captiontext">Sie, Acryl auf Leinwand, 2016</div>
+                       </div>
+
+                           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                 </div>
+                 <br>
+
+                 <div style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                 </div>
+
+
+
+                              <script>
+                                     var slideIndex = 1;
+                                     showSlides(slideIndex);
+
+                                     function plusSlides(n) {
+                                       showSlides(slideIndex += n);
+                                     }
+
+                                     function currentSlide(n) {
+                                       showSlides(slideIndex = n);
+                                     }
+
+                                     function showSlides(n) {
+                                       var i;
+                                       var slides = document.getElementsByClassName("mySlides");
+                                       var dots = document.getElementsByClassName("dot");
+                                       if (n > slides.length) {slideIndex = 1}
+                                       if (n < 1) {slideIndex = slides.length}
+                                       for (i = 0; i < slides.length; i++) {
+                                           slides[i].style.display = "none";
+                                       }
+                                       for (i = 0; i < dots.length; i++) {
+                                           dots[i].className = dots[i].className.replace(" active", "");
+                                       }
+                                       slides[slideIndex-1].style.display = "block";
+                                       dots[slideIndex-1].className += " active";
+                                     }
+                               </script>
+
+          </div>
+                  <div>
+
+                     <h2>Surrealität</h2>
+
+                         <div class="text einleitungstext">
+                           <p>Ich bilde die Wirklichkeit gerne auf meine eigene, fantasievolle Weise ab, verzerre und verdrehe sie in meinen Bildern. Der Surrealismus in der Kunst hat mich daher schon immer fasziniert und ich bringe ganz gerne einzelne Aspekte dieser Kunstrichtung in meine Arbeiten ein.</p>
+                         </div>
+
+
+                             <div class="slideshow-container">
+                                  <div class="mySlides fade">
+                                    <img src="images/malerei/froschkoenig.jpg" style="width:100%">
+                                    <div class="captiontext">Mondsüchtig, Acryl auf Papier, 2017</div>
+                                  </div>
+
+                                  <div class="mySlides fade">
+                                    <img src="images/malerei/kaktus.JPG" style="width:100%">
+                                    <div class="captiontext">Kakteen, Acryl auf Leinwand, 2016</div>
+                                  </div>
+
+                                  <div class="mySlides fade">
+                                    <img src="images/malerei/vergaenglichkeit.JPG" style="width:100%">
+                                    <div class="captiontext">Vergänglichkeit, Acryl auf Leinwand, 2014</div>
+                                  </div>
+
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span>
+                              <span class="dot" onclick="currentSlide(2)"></span>
+                              <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+
+
+
+                                         <script>
+                                                var slideIndex = 1;
+                                                showSlides(slideIndex);
+
+                                                function plusSlides(n) {
+                                                  showSlides(slideIndex += n);
+                                                }
+
+                                                function currentSlide(n) {
+                                                  showSlides(slideIndex = n);
+                                                }
+
+                                                function showSlides(n) {
+                                                  var i;
+                                                  var slides = document.getElementsByClassName("mySlides");
+                                                  var dots = document.getElementsByClassName("dot");
+                                                  if (n > slides.length) {slideIndex = 1}
+                                                  if (n < 1) {slideIndex = slides.length}
+                                                  for (i = 0; i < slides.length; i++) {
+                                                      slides[i].style.display = "none";
+                                                  }
+                                                  for (i = 0; i < dots.length; i++) {
+                                                      dots[i].className = dots[i].className.replace(" active", "");
+                                                  }
+                                                  slides[slideIndex-1].style.display = "block";
+                                                  dots[slideIndex-1].className += " active";
+                                                }
+                                          </script>
+                          </div>
 
 </div>
 
