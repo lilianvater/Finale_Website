@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body{
   margin:0;
   padding:0;
   width:100%;
@@ -76,7 +76,7 @@ h2{
   text-align: center;
   font-size: 30pt;
   color: rgb(50, 50, 50);
-  margin-top: 40px;
+
 }
 
 .text{
@@ -103,7 +103,6 @@ h2{
 .adresse{
   float: right;
   margin-right: 395px;
-
 }
 
 .emailbild{
@@ -136,6 +135,42 @@ h2{
   clear: both;
 }
 
+.ich{
+  float: left;
+  display: block;
+  width: 37%;
+}
+.lebenslauf{
+  float: right;
+  display: block;
+  width: 55%;
+}
+table{
+  font-size: 13pt;
+  font-family: 'Open Sans', sans-serif;
+}
+td{
+  padding-bottom: 15px;
+}
+.datum{
+  padding-right: 20px;
+  text-align: left;
+}
+.interessenbild{
+  width: 150px;
+  float: left;
+  margin-left: 150px;
+  clear: both;
+  margin-top: 60px;
+}
+
+.interesse{
+  float: right;
+  margin-top: 60px;
+  margin-right: 150px;
+  width: 50%;
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -144,9 +179,19 @@ h2{
   margin: auto;
 }
 
-.mySlides {
-    display: none;
+.slideshow-container1 {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
 }
+
+.slideshow-container2 {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -171,7 +216,7 @@ h2{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: grey;
+  background-color: rgb(50,50,50,0.5);
 }
 
 /* Caption text */
