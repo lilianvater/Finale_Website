@@ -4,9 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Lilian Vater</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Rock+Salt" rel="stylesheet">
     <link href="css/stylesheet1.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="start">
@@ -22,10 +21,6 @@
   <div>
 
      <h2>Märchenheldinnen</h2>
-
-         <div class="text einleitungstext">
-           <p>Ich bilde die Wirklichkeit gerne auf meine eigene, fantasievolle Weise ab, verzerre und verdrehe sie in meinen Bildern. Der Surrealismus in der Kunst hat mich daher schon immer fasziniert und ich bringe ganz gerne einzelne Aspekte dieser Kunstrichtung in meine Arbeiten ein.</p>
-         </div>
 
 
              <div class="slideshow-container2">
@@ -122,38 +117,38 @@
             </div>
 
 
-
-                         <script>
-                                var slideIndex = 1;
-                                showSlides(slideIndex);
-
-                                function plusSlides(n) {
-                                  showSlides(slideIndex += n);
-                                }
-
-                                function currentSlide(n) {
-                                  showSlides(slideIndex = n);
-                                }
-
-                                function showSlides(n) {
-                                  var i;
-                                  var slides = document.getElementsByClassName("mySlides");
-                                  var dots = document.getElementsByClassName("dot");
-                                  if (n > slides.length) {slideIndex = 1}
-                                  if (n < 1) {slideIndex = slides.length}
-                                  for (i = 0; i < slides.length; i++) {
-                                      slides[i].style.display = "none";
-                                  }
-                                  for (i = 0; i < dots.length; i++) {
-                                      dots[i].className = dots[i].className.replace(" active", "");
-                                  }
-                                  slides[slideIndex-1].style.display = "block";
-                                  dots[slideIndex-1].className += " active";
-                                }
-                          </script>
+              <h2>Kindheitshelden</h2>
+              <h2>Dies & Das</h2>
           </div>
 
 </div>
+<script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
 
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+       }
+ </script>
   </body>
 </html>

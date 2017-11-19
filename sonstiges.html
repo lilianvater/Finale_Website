@@ -4,9 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Lilian Vater</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Rock+Salt" rel="stylesheet">
     <link href="css/stylesheet1.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="start">
@@ -22,9 +21,6 @@
 
   <h2>Textil</h2>
 
-      <div class="text einleitungstext">
-        <p>Ich bilde die Wirklichkeit gerne auf meine eigene, fantasievolle Weise ab, verzerre und verdrehe sie in meinen Bildern. Der Surrealismus in der Kunst hat mich daher schon immer fasziniert und ich bringe ganz gerne einzelne Aspekte dieser Kunstrichtung in meine Arbeiten ein.</p>
-      </div>
 
 
           <div class="slideshow-container1">
@@ -40,7 +36,7 @@
 
                <div class="mySlides fade">
                  <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
-                 <div class="captiontext">Froschkönigin, Stoffschütze, 2016</div>
+                 <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
                </div>
 
                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -56,38 +52,95 @@
 
 
 
-                      <script>
-                             var slideIndex = 1;
-                             showSlides(slideIndex);
 
-                             function plusSlides(n) {
-                               showSlides(slideIndex += n);
-                             }
+          <h2>Daumenkinos</h2>
+          <h2>Skizzen</h2>
+          <div class="slideshow-container6">
+               <div class="mySlides6 fade">
+                 <img src="images/sonstiges/rumo_textil.jpg" style="width:100%">
+                 <div class="captiontext">Rumo, Stoffbeutel, 2017</div>
+               </div>
 
-                             function currentSlide(n) {
-                               showSlides(slideIndex = n);
-                             }
+               <div class="mySlides6 fade">
+                 <img src="images/sonstiges/blaubaer_textil.jpg" style="width:100%">
+                 <div class="captiontext">Blaubär, Stoffbeutel, 2016</div>
+               </div>
 
-                             function showSlides(n) {
-                               var i;
-                               var slides = document.getElementsByClassName("mySlides");
-                               var dots = document.getElementsByClassName("dot");
-                               if (n > slides.length) {slideIndex = 1}
-                               if (n < 1) {slideIndex = slides.length}
-                               for (i = 0; i < slides.length; i++) {
-                                   slides[i].style.display = "none";
-                               }
-                               for (i = 0; i < dots.length; i++) {
-                                   dots[i].className = dots[i].className.replace(" active", "");
-                               }
-                               slides[slideIndex-1].style.display = "block";
-                               dots[slideIndex-1].className += " active";
-                             }
-                       </script>
+               <div class="mySlides6 fade">
+                 <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
+                 <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
+               </div>
+
+                   <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                   <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+         </div>
+         <br>
+
+         <div style="text-align:center">
+           <span class="dot6" onclick="currentSlide6(1)"></span>
+           <span class="dot6" onclick="currentSlide6(2)"></span>
+           <span class="dot6" onclick="currentSlide6(3)"></span>
+         </div>
+
        </div>
 
 
 </div>
+<script>
+       var slideIndex = 1;
+       showSlides6(slideIndex);
 
+       function plusSlides6(n) {
+         showSlides6(slideIndex += n);
+       }
+
+       function currentSlide6(n) {
+         showSlides6(slideIndex = n);
+       }
+
+       function showSlides6(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides6");
+         var dots = document.getElementsByClassName("dot6");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+       }
+  </script>
+  <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " active";
+         }
+    </script>
   </body>
 </html>

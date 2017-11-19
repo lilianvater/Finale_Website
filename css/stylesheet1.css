@@ -1,59 +1,48 @@
 *{
   box-sizing: border-box;
 }
-
 html, body{
   margin:0;
   padding:0;
   width:100%;
   height:100%;
 }
-
 body{
   background: rgb(159, 181, 187);
 }
-
-
 a:link{
   color: black;
   text-decoration: none;
 }
-
 a:visited{
   color: black;
 }
-
 a:hover{
   color: white;
 }
-
 a:active{
   color: white;
 }
-
 .rund{
   display: block;
   border-radius: 50%;
 -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 }
-
 .start{
   float: left;
   margin-left: 80px;
   margin-top: 20px;
   width: 150px;
 }
-
 .name{
   float: right;
-  font-family: 'Cabin Sketch', sans-serif;
+  font-family: 'Rock Salt',sans-serif;
   font-size: 30pt;
   color: rgb(50, 50, 50);
   margin-right: 80px;
   margin-top: 35px;
 }
-
 .content{
   clear: both;
   margin-left: auto;
@@ -61,31 +50,26 @@ a:active{
   width: 85%;
   margin-top: 250px;
 }
-
 h1{
-  font-family: 'Cabin Sketch', sans-serif;
+  font-family: 'Rock Salt',sans-serif;
   text-align: center;
   font-size: 50pt;
   color: rgb(50, 50, 50);
   font-weight: 700;
   margin-bottom: 100px;
 }
-
 h2{
-  font-family: 'Cabin Sketch', sans-serif;
+  font-family: 'Rock Salt',sans-serif;
   text-align: center;
   font-size: 30pt;
   color: rgb(50, 50, 50);
-
 }
-
 .text{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 13pt;
   color: rgb(50, 50, 50);
   margin-bottom: 100px;
 }
-
 .einleitungstext{
   margin-bottom: 70px;
   margin-left: auto;
@@ -93,61 +77,123 @@ h2{
   width: 55%;
   text-align: justify;
 }
-
-.adressebild{
-  width: 150px;
-  float: left;
-  margin-left: 195px;
+.gedicht{
+  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 34%;
+  text-align: justify;
+  font-size: 15pt;
 }
-
+.lesetext{
+  margin-bottom: 70px;
+  margin-top: 100px;
+  width: 75%;
+  text-align: justify;
+  font-size: 15pt;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(50, 50, 50);
+}
+.anmerkungen{
+  margin-bottom: 70px;
+  margin-top: 880px;
+  width: 22%;
+  font-size: 12pt;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(50, 50, 50);
+}
+.adressebild{
+  width: 9%;
+  float: left;
+  margin-left: 24%;
+  padding-top: 15px;
+}
 .adresse{
   float: right;
-  margin-right: 395px;
+  margin-right: 40%;
 }
-
 .emailbild{
-  width: 150px;
+  width: 9%;
   float: left;
-  margin-left: 345px;
+  margin-left: 38%;
   clear: both;
 }
-
 .email{
   float: right;
-  margin-right: 320px;
-  padding-top: 40px;
+  margin-right: 33%;
+  padding-top: 20px;
 }
-
 .telebild{
-  width: 150px;
+  width: 9%;
   float: left;
-  margin-left: 495px;
+  margin-left: 52%;
   clear: both;
 }
-
 .tele{
   float: right;
-  margin-right: 250px;
-  padding-top: 40px;
+  margin-right: 27%;
+  padding-top: 20px;
 }
-
 .gecleart{
   clear: both;
 }
-
 .ich{
   float: left;
   display: block;
   width: 37%;
+}
+.ich img{
+  width: 100%;
+}
+.bilddaneben{
+  float: left;
+  display: block;
+  width: 35%;
+  margin-left: 60px;
+}
+.bilddaneben img{
+  width: 100%;
 }
 .lebenslauf{
   float: right;
   display: block;
   width: 55%;
 }
+.daneben{
+  float: right;
+  display: block;
+  width: 45%;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13pt;
+  margin-right: 60px;
+  margin-top: 70px;
+}
+figcaption {
+  opacity: 0;
+  bottom: -3em;
+  transition: all 1s ease;
+  text-align: center;
+  font-size: 20pt;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(50, 50, 50);
+  margin-top: 35px;
+}
+figure:hover figcaption {
+  opacity: 1;
+  bottom: 0;
+  margin-top: -10px;
+}
+figure{
+  margin-left: 0;
+  margin-right: 0;
+}
 table{
   font-size: 13pt;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 td{
   padding-bottom: 15px;
@@ -157,41 +203,251 @@ td{
   text-align: left;
 }
 .interessenbild{
-  width: 150px;
+  width: 13%;
   float: left;
-  margin-left: 150px;
+  margin-left: 230px;
   clear: both;
-  margin-top: 60px;
+  margin-top: 45px;
 }
-
 .interesse{
   float: right;
-  margin-top: 60px;
-  margin-right: 150px;
+  margin-top: 80px;
+  margin-right: 230px;
+  width: 40%;
+  font-family: 'Raleway', sans-serif;
+}
+.projektuebersicht{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.einbild{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.einbild1{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
-  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.einzelprojekt{
+  width: 228px;
+}
+.einzelprojekt1{
+  width: 228px;
+}
+.yfuuebersicht{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.einzelyfu{
+  width: 300px;
+}
+.einzelmusi{
+  width: 440px;
+}
+.einzeltanz{
+  width: 304px;
+}
+.einzeltanz1{
+  width: 200px;
+}
+.einzelreise{
+  width: 90%;
+}
+.einzelillu{
+  width: 300px;
+}
+.einzelbild{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  display: block;
+  margin-top: 100px;
+}
+li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul{
+  padding:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* fürs Smartphone */
+@media (max-width: 576px) {
+  .start{
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+  .name{
+    font-size: 12pt;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+  .content{
+    width: 95%;
+  }
+  h1{
+    font-size: 25pt;
+    font-weight: 700;
+  }
+  h2{
+    font-size: 15pt;
+  }
+  .text{
+    font-size: 9pt;
+    color: rgb(50, 50, 50);
+    margin-bottom: 100px;
+  }
+  .einleitungstext{
+    width: 95%;
+  }
+  .ich{
+    width: 100%;
+  }
+  .ich img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+  }
+  .bilddaneben{
+  width: 100%;
+  margin-left: 0;
+  }
+  .bilddaneben img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+  }
+  .lebenslauf{
+    width: 95%;
+  }
+  table{
+    font-size: 9pt;
+  }
+  td{
+    padding-bottom: 10px;
+  }
+  .daneben{
+    width: 100%;
+    text-align: justify;
+    font-size: 9pt;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  figcaption {
+    font-size: 20pt;
+    margin-top: 5px;
+    opacity: 1;
+    bottom: 0;
+  }
+  figure:hover figcaption {
+    opacity: 1;
+    bottom: 0;
+    margin-top: 10px;
+  }
+  .interessenbild{
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .interesse{
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 60%;
+    font-size: 9pt;
+  }
+  .einzelprojekt1{
+    width: 155px;
+  }
+  .einzelyfu{
+    width: 280px;
+  }
+  .einzelmusi{
+    width: 280px;
+  }
+  .einzeltanz{
+    width: 280px;
+  }
+  .einzeltanz1{
+    width: 115px;
+  }
+  .einzelreise{
+    width: 90%;
+  }
+  .einzelillu{
+    width: 300px;
+  }
+  .einzelbild{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: block;
+    margin-top: 100px;
+  }
 }
 
+/* fürs schmale Smartphone */
+@media (max-width: 350px) {
+  h1{
+    font-size: 23pt;
+  }
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 900px;
   position: relative;
   margin: auto;
 }
-
 .slideshow-container1 {
   max-width: 600px;
   position: relative;
   margin: auto;
 }
-
 .slideshow-container2 {
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   margin: auto;
 }
-
-
+.slideshow-container3 {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container4 {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container5 {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container6 {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -207,23 +463,20 @@ td{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgb(50,50,50,0.5);
 }
-
 /* Caption text */
 .captiontext {
   color: white;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -244,11 +497,35 @@ td{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.dot6 {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot4 {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 .active, .dot:hover {
   background-color: grey;
 }
-
+.active, .dot6:hover {
+  background-color: grey;
+}
+.active, .dot4:hover {
+  background-color: grey;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

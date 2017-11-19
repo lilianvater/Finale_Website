@@ -4,9 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Lilian Vater</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Rock+Salt" rel="stylesheet">
     <link href="css/stylesheet1.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="start">
@@ -19,11 +18,84 @@
 
 <div class="content">
   <h1>Illustration</h1>
-      <div class="text">
-        <p>Ja hallo, hier mal ein kleiner Probetext, weil ich zu mehr gerade keine Lust habe, aber mal schauen will, wie das so mit der Schrift aussieht. Jetzt bin ich gespannt. Hui! ;)</p>
+  <p class="einleitungstext text">Ich illustriere hauptsächlich meine eigenen Texte. Die variieren zwischen Gedichten und Kurzgeschichten auf der einen und Romanen auf der anderen Seite. Letztere sind zum größten Teil bisher nur Ideen, die ich aber schon versucht habe zu Illustrieren. Schreiben tue ich momentan an einem dreibändigen Fantasyroman mit dem Titel <i>Aylen</i>.</p>
+<div class="einbild">
+      <img class="einbild1" src="images/illustration/komplementaer.jpg">
+</div>
+  <h2>Titelseiten</h2>
+      <div class="projektuebersicht">
+        <ul>
+          <li><img class="einzelillu" src="images/illustration/helle_augen.jpg"></li>
+          <li><img class="einzelillu" src="images/illustration/rachel.jpg"></li>
+          <li><img class="einzelillu" src="images/illustration/hexenzauber.jpg"></li>
+        </ul>
       </div>
+  <h2>Aylen</h2>
+</div>
+<div class="slideshow-container3">
+     <div class="mySlides fade">
+       <img src="images/illustration/titel_illu.jpg" style="width:100%">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="images/illustration/illu.jpg" style="width:100%">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="images/illustration/illu1.jpg" style="width:100%">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="images/illustration/illu2.jpg" style="width:100%">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="images/illustration/illu3.jpg" style="width:100%">
+     </div>
+
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span>
 
 </div>
 
+</div>
+<script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
+
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+       }
+ </script>
   </body>
 </html>

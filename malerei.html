@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Lilian Vater</title>
-  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300|Rock+Salt" rel="stylesheet">
   <link href="css/flexslider.css" rel="stylesheet" type="text/css">
   <link href="css/stylesheet1.css" rel="stylesheet" type="text/css" media="screen">
 </head>
@@ -22,88 +21,209 @@
   <div class="content">
     <h1>Malerei</h1>
 
-
-
       <h2>Gesichter</h2>
 
-      <div class="text einleitungstext">
-        <p>Menschen und im Besonderen ihre Gesichter haben mich schon immer fasziniert, weshalb sich unter meinen Arbeiten auch immer wieder Portraits finden lassen. Dabei mit den Farben zu spielen, macht mir in der Malerei besonderen Spaß.</p>
-      </div>
+              <div class="slideshow-container">
+                   <div class="mySlides fade">
+                     <img src="images/malerei/portrait.jpg" style="width:100%">
+                     <div class="captiontext">Selbstportrait, Acryl auf Papier, 2015</div>
+                   </div>
+
+                   <div class="mySlides fade">
+                     <img src="images/malerei/portrait1.jpg" style="width:100%">
+                     <div class="captiontext">Anja, Acryl auf Papier, 2015</div>
+                   </div>
+
+                   <div class="mySlides fade">
+                     <img src="images/malerei/portrait2.JPG" style="width:100%">
+                     <div class="captiontext">Frau, Acryl auf Leinwand, 2016</div>
+                   </div>
+
+                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+             <br>
+
+             <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
 
 
+                <h2>Surrealität</h2>
+                <div class="slideshow-container4">
+                     <div class="mySlides4 fade">
+                       <img src="images/sonstiges/rumo_textil.jpg" style="width:100%">
+                       <div class="captiontext">Rumo, Stoffbeutel, 2017</div>
+                     </div>
 
-      <!-- slider 1 -->
-      <div class="flexslider">
-        <ul class="slides_1">
-          <li>
-            <img src="images/malerei/portrait.jpg" />
-          </li>
-          <li>
-            <img src="images/malerei/portrait1.jpg" />
-          </li>
-          <li>
-            <img src="images/malerei/portrait2.JPG" />
-          </li>
-        </ul>
-      </div>
+                     <div class="mySlides4 fade">
+                       <img src="images/sonstiges/blaubaer_textil.jpg" style="width:100%">
+                       <div class="captiontext">Blaubär, Stoffbeutel, 2016</div>
+                     </div>
+
+                     <div class="mySlides4 fade">
+                       <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
+                       <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
+                     </div>
+
+                         <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                         <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+               </div>
+               <br>
+
+               <div style="text-align:center">
+                 <span class="dot4" onclick="currentSlide6(1)"></span>
+                 <span class="dot4" onclick="currentSlide6(2)"></span>
+                 <span class="dot4" onclick="currentSlide6(3)"></span>
+               </div>
+
+             </div>
+
+                      <h2>Verschlungen</h2>
+                      <div class="slideshow-container5">
+                           <div class="mySlides6 fade">
+                             <img src="images/sonstiges/rumo_textil.jpg" style="width:100%">
+                             <div class="captiontext">Rumo, Stoffbeutel, 2017</div>
+                           </div>
+
+                           <div class="mySlides6 fade">
+                             <img src="images/sonstiges/blaubaer_textil.jpg" style="width:100%">
+                             <div class="captiontext">Blaubär, Stoffbeutel, 2016</div>
+                           </div>
+
+                           <div class="mySlides6 fade">
+                             <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
+                             <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
+                           </div>
+
+                               <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                               <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+                     </div>
+                     <br>
+
+                     <div style="text-align:center">
+                       <span class="dot6" onclick="currentSlide6(1)"></span>
+                       <span class="dot6" onclick="currentSlide6(2)"></span>
+                       <span class="dot6" onclick="currentSlide6(3)"></span>
+                     </div>
+
+     </div>
 
 
+</div>
+<script>
+     var slideIndex = 1;
+     showSlides6(slideIndex);
 
+     function plusSlides6(n) {
+       showSlides6(slideIndex += n);
+     }
 
+     function currentSlide6(n) {
+       showSlides6(slideIndex = n);
+     }
 
+     function showSlides6(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides6");
+       var dots = document.getElementsByClassName("dot6");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+<script>
+     var slideIndex = 1;
+     showSlides6(slideIndex);
 
+     function plusSlides6(n) {
+       showSlides6(slideIndex += n);
+     }
 
+     function currentSlide6(n) {
+       showSlides6(slideIndex = n);
+     }
 
-      <h2>Surrealität</h2>
+     function showSlides6(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides6");
+       var dots = document.getElementsByClassName("dot6");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+<script>
+     var slideIndex = 1;
+     showSlides4(slideIndex);
 
-      <div class="text einleitungstext">
-        <p>Ich bilde die Wirklichkeit gerne auf meine eigene, fantasievolle Weise ab, verzerre und verdrehe sie in meinen Bildern. Der Surrealismus in der Kunst hat mich daher schon immer fasziniert und ich bringe ganz gerne einzelne Aspekte dieser Kunstrichtung
-          in meine Arbeiten ein.</p>
-      </div>
+     function plusSlides4(n) {
+       showSlides4(slideIndex += n);
+     }
 
+     function currentSlide4(n) {
+       showSlides4(slideIndex = n);
+     }
 
-      <!-- Place somewhere in the <body> of your page -->
-      <div class="flexslider">
-        <ul class="slides_2">
-          <li>
-            <img src="slide1.jpg" />
-          </li>
-          <li>
-            <img src="slide2.jpg" />
-          </li>
-          <li>
-            <img src="slide3.jpg" />
-          </li>
-          <li>
-            <img src="slide4.jpg" />
-          </li>
-        </ul>
-      </div>
+     function showSlides4(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides4");
+       var dots = document.getElementsByClassName("dot4");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+<script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
 
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
 
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
 
-
-
-  </div>
-  <script
-  			  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  			  crossorigin="anonymous"></script>
-
-  <script src="js/jquery.flexslider-min.js"></script>
-  <script>
-    // Can also be used with $(document).ready()
-    $(window).load(function() {
-      $('.flexslider').slides_1({
-        animation: "slide"
-      });
-    });
-
-    $(window).load(function() {
-      $('.flexslider').slides_2({
-        animation: "slide"
-      });
-    });
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+       }
   </script>
 </body>
 
