@@ -38,8 +38,8 @@ a:active{
 .name{
   float: right;
   margin-right: 80px;
-  margin-top: 20px;
-  width: 170px;
+  margin-top: 60px;
+  width: 90px;
 }
 .content{
   clear: both;
@@ -80,7 +80,7 @@ h2{
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  width: 34%;
+  width: 500px;
   text-align: justify;
   font-size: 15pt;
 }
@@ -229,11 +229,9 @@ td{
   text-align: center;
 }
 .einbild1{
-  display:inline-block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  text-align: center;
 }
 .einzelprojekt{
   width: 228px;
@@ -257,9 +255,6 @@ td{
 .einzeltanz{
   width: 304px;
 }
-.einzelprozess{
-  width: 75%;
-}
 .einzeltanz1{
   width: 200px;
 }
@@ -270,7 +265,10 @@ td{
   width: 90%;
 }
 .einzelillu{
-  width: 300px;
+  width: 270px;
+}
+.einzelprozess{
+  width: 75%;
 }
 .einzelprozess1{
   width: 45%;
@@ -313,9 +311,6 @@ ul{
   .bilddaneben img{
     width: 100%;
   }
-  .bilddaneben{
-
-  }
   .lebenslauf{
     width: 60%;
   }
@@ -324,6 +319,18 @@ ul{
   }
   td{
     padding-bottom: 10px;
+  }
+  .adressebild{
+    width: 80px;
+    margin-left: 23%;
+  }
+  .emailbild{
+    width: 80px;
+    margin-left: 37%;
+  }
+  .telebild{
+    width: 80px;
+    margin-left: 51%;
   }
   .daneben{
     width: 50%;
@@ -367,7 +374,7 @@ ul{
     width: 270px;
   }
   .einzeltanz1{
-    width: 115px;
+    width: 177px;
   }
   .einzelreise{
     width: 90%;
@@ -375,11 +382,11 @@ ul{
   .einzelprozess{
     width: 90%;
   }
-  .einzelillu{
-    width: 270px;
+  .einzelprozess{
+    width: 80%;
   }
   .einbild1{
-    width: 95%;
+    width: 65%;
   }
   .einzelbild{
     margin-left: auto;
@@ -394,10 +401,12 @@ ul{
     font-size: 12pt;
   }
   .lesetext{
-    width: 99%;
+    width: 70%;
     position: relative;
     font-size: 11pt;
     float:none;
+    margin-left: auto;
+    margin-right: auto;
   }
   .anmerkungen{
     max-width: 300px;
@@ -410,129 +419,62 @@ ul{
 }
 /* kleines Tablet */
 @media (max-width: 996px) {
-  .content{
-    width: 95%;
-  }
-  .text{
-    font-size: 11pt;
-  }
-  .einleitungstext{
-    width: 80%;
-  }
   .lebenslauf{
     width: 50%;
   }
   .ich{
     width: 45%;
   }
-  table{
-    font-size: 11pt;
+  .adressebild{
+    margin-left: 0;
   }
-  td{
-    padding-bottom: 10px;
+  .emailbild{
+    margin-left: 0;
   }
-  .daneben{
-    width: 50%;
-    font-size: 11pt;
-    margin-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .telebild{
+    margin-left: 0;
   }
-  figcaption {
-    font-size: 20pt;
-    margin-top: 5px;
-    opacity: 1;
-    bottom: 0;
+  .adresse{
+    margin-right: 500px;
   }
-  figure:hover figcaption {
-    opacity: 1;
-    bottom: 0;
-    margin-top: 10px;
+  .email{
+    margin-right: 500px;
+  }
+  .tele{
+    margin-right: 500px;
   }
   .interessenbild{
-    width: 110px;
     margin-left: 25%;
-    margin-top: 15px;
   }
   .interesse{
-    margin-top: 30px;
     margin-right: 25%;
-    width: 250px;
-    font-size: 11pt;
   }
-  .einzelprojekt1{
-    width: 155px;
-  }
-  .einzelyfu{
-    width: 270px;
-  }
-  .einzelmusi{
-    width: 270px;
-  }
-  .einzeltanz{
-    width: 270px;
-  }
-  .einzeltanz1{
-    width: 115px;
-  }
-  .einzelreise{
-    width: 90%;
+  .lesetext{
+    width: 89%;
   }
   .einzelprozess{
     width: 90%;
   }
-  .einzelillu{
-    width: 270px;
-  }
-  .einbild1{
-    width: 95%;
-  }
-  .einzelbild{
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    display: block;
-    margin-top: 100px;
-  }
-  .gedicht{
-    width: 300px;
-    position: relative;
-    font-size: 12pt;
-  }
-  .lesetext{
-    width: 99%;
-    position: relative;
-    font-size: 11pt;
-    float:none;
-  }
-  .anmerkungen{
-    max-width: 300px;
-    position: absolute;
-    opacity: 0;
-    float: none;
-    font-size: 1pt;
-    z-index: -10;
+  .einzelprozess1{
+    width: 50%;
   }
 }
 /* kleineres Tablet */
 @media (max-width: 850px) {
-  .content{
-    width: 95%;
-  }
   h1{
     font-size: 35pt;
   }
   h2{
     font-size: 20pt;
   }
-  .text{
-    font-size: 11pt;
+  .adresse{
+    margin-right: 410px;
   }
-  .einleitungstext{
-    width: 80%;
+  .email{
+    margin-right: 410px;
   }
-  .bilddaneben{
-    width: 30%;
+  .tele{
+    margin-right: 410px;
   }
   .lebenslauf{
     width: 70%;
@@ -540,6 +482,24 @@ ul{
     margin-right: auto;
     display: block;
     float: none;
+  }
+  .daneben{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+  .bilddaneben{
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  .bilddaneben img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
   }
   .ich{
     width: 100%;
@@ -553,111 +513,42 @@ ul{
   table{
     font-size: 10pt;
   }
-  td{
-    padding-bottom: 10px;
-  }
-  .daneben{
-    width: 50%;
-    font-size: 10pt;
-    margin-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  figcaption {
-    font-size: 20pt;
-    margin-top: 5px;
-    opacity: 1;
-    bottom: 0;
-  }
-  figure:hover figcaption {
-    opacity: 1;
-    bottom: 0;
-    margin-top: 10px;
-  }
   .interessenbild{
-    width: 110px;
     margin-left: 18%;
-    margin-top: 15px;
   }
   .interesse{
-    margin-top: 30px;
     margin-right: 18%;
-    width: 250px;
     font-size: 10pt;
   }
-  .einzelprojekt1{
-    width: 155px;
-  }
-  .einzelyfu{
-    width: 270px;
-  }
-  .einzelmusi{
-    width: 270px;
-  }
-  .einzeltanz{
-    width: 270px;
-  }
-  .einzeltanz1{
-    width: 115px;
-  }
-  .einzelreise{
-    width: 90%;
+  .einbild1{
+    width: 80%;
   }
   .einzelprozess{
-    width: 90%;
+    width: 100%;
   }
-  .einzelillu{
-    width: 270px;
+  .einzelprozess1{
+    width: 60%;
   }
-  .einbild1{
-    width: 95%;
+}
+/* Zwischen-Tablet */
+@media (max-width: 770px) {
+  .adresse{
+    margin-right: 200px;
   }
-  .einzelbild{
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    display: block;
-    margin-top: 100px;
+  .email{
+    margin-right: 200px;
   }
-  .gedicht{
-    width: 300px;
-    position: relative;
-    font-size: 12pt;
-  }
-  .lesetext{
-    width: 99%;
-    position: relative;
-    font-size: 11pt;
-    float:none;
-  }
-  .anmerkungen{
-    max-width: 300px;
-    position: absolute;
-    opacity: 0;
-    float: none;
-    font-size: 1pt;
-    z-index: -10;
+  .tele{
+    margin-right: 200px;
   }
 }
 /* noch kleineres Tablet */
 @media (max-width: 593px) {
-  .content{
-    width: 95%;
-  }
-  h1{
-    font-size: 35pt;
-  }
-  h2{
-    font-size: 20pt;
-  }
   .text{
     font-size: 11pt;
   }
   .einleitungstext{
     width: 80%;
-  }
-  .bilddaneben{
-    width: 30%;
   }
   .lebenslauf{
     width: 70%;
@@ -680,24 +571,6 @@ ul{
   }
   td{
     padding-bottom: 10px;
-  }
-  .daneben{
-    width: 50%;
-    font-size: 10pt;
-    margin-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  figcaption {
-    font-size: 20pt;
-    margin-top: 5px;
-    opacity: 1;
-    bottom: 0;
-  }
-  figure:hover figcaption {
-    opacity: 1;
-    bottom: 0;
-    margin-top: 10px;
   }
   .interessenbild{
     margin-left: 12%;
@@ -708,67 +581,23 @@ ul{
   .einzelprojekt1{
     width: 155px;
   }
-  .einzelyfu{
-    width: 270px;
-  }
-  .einzelmusi{
-    width: 270px;
-  }
-  .einzeltanz{
-    width: 270px;
-  }
-  .einzeltanz1{
-    width: 115px;
-  }
-  .einzelreise{
-    width: 90%;
-  }
-  .einzelprozess{
-    width: 90%;
-  }
-  .einzelillu{
-    width: 270px;
-  }
   .einbild1{
-    width: 95%;
+    width: 85%;
   }
-  .einzelbild{
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    display: block;
-    margin-top: 100px;
-  }
-  .gedicht{
-    width: 300px;
-    position: relative;
-    font-size: 12pt;
-  }
-  .lesetext{
-    width: 99%;
-    position: relative;
-    font-size: 11pt;
-    float:none;
-  }
-  .anmerkungen{
-    max-width: 300px;
-    position: absolute;
-    opacity: 0;
-    float: none;
-    font-size: 1pt;
-    z-index: -10;
+  .einzelprozess1{
+    width: 80%;
   }
 }
 /* fürs Smartphone */
 @media (max-width: 576px) {
   .start{
-    width: 120px;
+    width: 110px;
     margin-left: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
   .name{
-    width: 150px;
+    width: 70px;
     margin-right: 20px;
   }
   .content{
@@ -797,6 +626,16 @@ ul{
     margin-right: auto;
     display: block;
     width: 90%;
+  }
+  .adresse{
+    margin-right: 100px;
+    padding-top: 10px;
+  }
+  .email{
+    margin-right: 100px;
+  }
+  .tele{
+    margin-right: 100px;
   }
   .bilddaneben{
   width: 100%;
@@ -827,17 +666,6 @@ ul{
     padding-left: 15px;
     padding-right: 15px;
   }
-  figcaption {
-    font-size: 20pt;
-    margin-top: 5px;
-    opacity: 1;
-    bottom: 0;
-  }
-  figure:hover figcaption {
-    opacity: 1;
-    bottom: 0;
-    margin-top: 10px;
-  }
   .interessenbild{
     width: 20%;
     margin-left: 10px;
@@ -852,29 +680,20 @@ ul{
   .einzelprojekt1{
     width: 155px;
   }
-  .einzelyfu{
-    width: 270px;
-  }
-  .einzelmusi{
-    width: 270px;
-  }
-  .einzeltanz{
-    width: 270px;
-  }
   .einzeltanz1{
     width: 115px;
   }
   .einzeltanz2{
-    width: 90%;
-  }
-  .einzelreise{
-    width: 90%;
-  }
-  .einzelprozess{
-    width: 90%;
+    width: 85%;
   }
   .einzelillu{
-    width: 270px;
+    width: 85%;
+  }
+  .einzelreise{
+    width: 100%;
+  }
+  .einzelprozess1{
+    width: 100%;
   }
   .einbild1{
     width: 95%;
@@ -887,30 +706,23 @@ ul{
     margin-top: 100px;
   }
   .gedicht{
-    width: 300px;
-    position: relative;
-    font-size: 12pt;
-  }
-  .lesetext{
-    width: 99%;
-    position: relative;
-    font-size: 10pt;
-    float:none;
-  }
-  .anmerkungen{
-    max-width: 300px;
-    position: absolute;
-    opacity: 0;
-    float: none;
-    font-size: 1pt;
-    z-index: -10;
+    width: 230px;
   }
 }
 
 /* fürs schmale Smartphone */
-@media (max-width: 350px) {
+@media (max-width: 393px) {
   h1{
     font-size: 22pt;
+  }
+  .adresse{
+    margin-right: 40px;
+  }
+  .email{
+    margin-right: 40px;
+  }
+  .tele{
+    margin-right: 40px;
   }
 }
 /* Slideshow container */
