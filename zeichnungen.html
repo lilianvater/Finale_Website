@@ -12,17 +12,180 @@
       <a href="index.html"><img class="rund" src="images/startseite/startseite_button.jpg" width="100%" alt="startseite"></a>
     </div>
 
-<div class="name">
-  <p>Lilian Vater</p>
-</div>
+    <div class="name">
+      <img src="images/logo.svg" width="100%" alt="Lilian Vater">
+    </div>
 
 <div class="content">
   <h1>Zeichnungen</h1>
 
-<h2>Bewegend</h2>
-<h2>Eesti</h2>
-<h2>Tiere</h2>
-</div>
+            <h2>Bewegend</h2>
+            <div class="slideshow-container5">
+                 <div class="mySlides fade">
+                   <img src="images/zeichnungen/tanzzeichnung.jpg" style="width:100%">
+                   <div class="captiontext">Rausch, Fineliner auf Papier, 2015</div>
+                 </div>
 
+                 <div class="mySlides fade">
+                   <img src="images/zeichnungen/tanzzeichnung1.jpg" style="width:100%">
+                   <div class="captiontext1">Stimmungen, Fineliner auf Papier, 2015</div>
+                 </div>
+
+                 <div class="mySlides fade">
+                   <img src="images/zeichnungen/tanzzeichnung2.jpg" style="width:100%">
+                   <div class="captiontext1">Füße, Bleistift auf Papier, 2015</div>
+                 </div>
+
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <h2>Eesti</h2>
+            <div class="slideshow-container4">
+                 <div class="mySlides4 fade">
+                   <img src="images/zeichnungen/estland_zeichnung.JPG" style="width:100%">
+                   <div class="captiontext">Spannungen, Kugelschreiber auf Papier, 2015</div>
+                 </div>
+
+                 <div class="mySlides4 fade">
+                   <img src="images/zeichnungen/estland_zeichnung1.jpg" style="width:100%">
+                   <div class="captiontext">Traditionsmoderne, Kugelschreiber auf Papier, 2015</div>
+                 </div>
+
+                     <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+             <span class="dot4" onclick="currentSlide6(1)"></span>
+             <span class="dot4" onclick="currentSlide6(2)"></span>
+            </div>
+
+            <h2>Tiere</h2>
+            <div class="slideshow-container2">
+                 <div class="mySlides6 fade">
+                   <img src="images/zeichnungen/eule.jpg" style="width:100%">
+                   <div class="captiontext1">Eule, Bleistift auf Papier, 2017</div>
+                 </div>
+
+                 <div class="mySlides6 fade">
+                   <img src="images/zeichnungen/fuchs.JPG" style="width:100%">
+                   <div class="captiontext">Fuchs, Fineliner auf Papier, 2017</div>
+                 </div>
+
+                 <div class="mySlides6 fade">
+                   <img src="images/zeichnungen/gepard.JPG" style="width:100%">
+                   <div class="captiontext1">Gepardin, Kugelschreiber auf Papier, 2017</div>
+                 </div>
+
+                 <div class="mySlides6 fade">
+                   <img src="images/zeichnungen/lama.JPG" style="width:100%">
+                   <div class="captiontext1">Lama, Buntstift auf Papier, 2017</div>
+                 </div>
+
+                     <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+             <span class="dot6" onclick="currentSlide6(1)"></span>
+             <span class="dot6" onclick="currentSlide6(2)"></span>
+             <span class="dot6" onclick="currentSlide6(3)"></span>
+             <span class="dot6" onclick="currentSlide6(4)"></span>
+            </div>
+</div>
+<script>
+     var slideIndex = 1;
+     showSlides6(slideIndex);
+
+     function plusSlides6(n) {
+       showSlides6(slideIndex += n);
+     }
+
+     function currentSlide6(n) {
+       showSlides6(slideIndex = n);
+     }
+
+     function showSlides6(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides6");
+       var dots = document.getElementsByClassName("dot6");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+<script>
+     var slideIndex = 1;
+     showSlides4(slideIndex);
+
+     function plusSlides4(n) {
+       showSlides4(slideIndex += n);
+     }
+
+     function currentSlide4(n) {
+       showSlides4(slideIndex = n);
+     }
+
+     function showSlides4(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides4");
+       var dots = document.getElementsByClassName("dot4");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+</script>
+<script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
+
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+       }
+  </script>
   </body>
 </html>

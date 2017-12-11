@@ -12,9 +12,9 @@
       <a href="index.html"><img class="rund" src="images/startseite/startseite_button.jpg" width="100%" alt="startseite"></a>
     </div>
 
-<div class="name">
-  <p>Lilian Vater</p>
-</div>
+    <div class="name">
+      <img src="images/logo.svg" width="100%" alt="Lilian Vater">
+    </div>
 
 <div class="content">
   <h1>Scherenschnitte</h1>
@@ -118,7 +118,67 @@
 
 
               <h2>Kindheitshelden</h2>
+              <div class="slideshow-container1">
+                   <div class="mySlides6 fade">
+                     <img src="images/scherenschnitte/helden/pippi_schnitt.jpg" style="width:100%">
+                     <div class="captiontext">Pippi Langstrumpf, Farbkarton, 2015</div>
+                   </div>
+
+                   <div class="mySlides6 fade">
+                     <img src="images/scherenschnitte/helden/jim_schnitt.jpg" style="width:100%">
+                     <div class="captiontext">Jim Knopf, Farbkarton, 2015</div>
+                   </div>
+
+                   <div class="mySlides6 fade">
+                     <img src="images/scherenschnitte/helden/harry_schnitt.jpg" style="width:100%">
+                     <div class="captiontext">Harry Potter, Farbkarton, 2015</div>
+                   </div>
+
+                   <div class="mySlides6 fade">
+                     <img src="images/scherenschnitte/helden/tim_schnitt.jpg" style="width:100%">
+                     <div class="captiontext">Tim und Struppi, Farbkarton, 2015</div>
+                   </div>
+
+                       <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                       <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+             </div>
+             <br>
+
+             <div style="text-align:center">
+               <span class="dot6" onclick="currentSlide6(1)"></span>
+               <span class="dot6" onclick="currentSlide6(2)"></span>
+               <span class="dot6" onclick="currentSlide6(3)"></span>
+               <span class="dot6" onclick="currentSlide6(4)"></span>
+             </div>
+
+           </div>
+
               <h2>Dies & Das</h2>
+              <div class="slideshow-container3">
+                   <div class="mySlides4 fade">
+                     <img src="images/scherenschnitte/schnitt2.jpg" style="width:100%">
+                   </div>
+
+                   <div class="mySlides4 fade">
+                     <img src="images/scherenschnitte/schnitt1.jpg" style="width:100%">
+                   </div>
+
+                   <div class="mySlides4 fade">
+                     <img src="images/scherenschnitte/schnitt3.jpg" style="width:100%">
+                   </div>
+
+                       <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                       <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+             </div>
+             <br>
+
+             <div style="text-align:center">
+               <span class="dot4" onclick="currentSlide6(1)"></span>
+               <span class="dot4" onclick="currentSlide6(2)"></span>
+               <span class="dot4" onclick="currentSlide6(3)"></span>
+             </div>
+
+           </div>
           </div>
 
 </div>
@@ -149,6 +209,62 @@
          slides[slideIndex-1].style.display = "block";
          dots[slideIndex-1].className += " active";
        }
+ </script>
+ <script>
+      var slideIndex = 1;
+      showSlides6(slideIndex);
+
+      function plusSlides6(n) {
+        showSlides6(slideIndex += n);
+      }
+
+      function currentSlide6(n) {
+        showSlides6(slideIndex = n);
+      }
+
+      function showSlides6(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides6");
+        var dots = document.getElementsByClassName("dot6");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+ </script>
+ <script>
+      var slideIndex = 1;
+      showSlides4(slideIndex);
+
+      function plusSlides4(n) {
+        showSlides4(slideIndex += n);
+      }
+
+      function currentSlide4(n) {
+        showSlides4(slideIndex = n);
+      }
+
+      function showSlides4(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides4");
+        var dots = document.getElementsByClassName("dot4");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
  </script>
   </body>
 </html>

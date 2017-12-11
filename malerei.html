@@ -15,7 +15,7 @@
   </div>
 
   <div class="name">
-    <p>Lilian Vater</p>
+    <img src="images/logo.svg" width="100%" alt="Lilian Vater">
   </div>
 
   <div class="content">
@@ -52,20 +52,20 @@
 
 
                 <h2>Surrealität</h2>
-                <div class="slideshow-container4">
+                <div class="slideshow-container1">
                      <div class="mySlides4 fade">
-                       <img src="images/sonstiges/rumo_textil.jpg" style="width:100%">
-                       <div class="captiontext">Rumo, Stoffbeutel, 2017</div>
+                       <img src="images/malerei/froschkoenig.jpg" style="width:100%">
+                       <div class="captiontext">Sehnsucht, Acryl auf Papier, 2017</div>
                      </div>
 
                      <div class="mySlides4 fade">
-                       <img src="images/sonstiges/blaubaer_textil.jpg" style="width:100%">
-                       <div class="captiontext">Blaubär, Stoffbeutel, 2016</div>
+                       <img src="images/malerei/kaktus.JPG" style="width:100%">
+                       <div class="captiontext">Kakteen, Acryl auf Leinwand, 2016</div>
                      </div>
 
                      <div class="mySlides4 fade">
-                       <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
-                       <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
+                       <img src="images/malerei/vergaenglichkeit.JPG" style="width:100%">
+                       <div class="captiontext">Vergänglichkeit, Acryl auf Leinwand, 2014</div>
                      </div>
 
                          <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
@@ -79,23 +79,26 @@
                  <span class="dot4" onclick="currentSlide6(3)"></span>
                </div>
 
-             </div>
-
                       <h2>Verschlungen</h2>
-                      <div class="slideshow-container5">
+                      <div class="slideshow-container1">
                            <div class="mySlides6 fade">
-                             <img src="images/sonstiges/rumo_textil.jpg" style="width:100%">
-                             <div class="captiontext">Rumo, Stoffbeutel, 2017</div>
+                             <img src="images/malerei/wasserschlange.jpg" style="width:100%">
+                             <div class="captiontext1">Verschlungen, Aquarell auf Papier, 2017</div>
                            </div>
 
                            <div class="mySlides6 fade">
-                             <img src="images/sonstiges/blaubaer_textil.jpg" style="width:100%">
-                             <div class="captiontext">Blaubär, Stoffbeutel, 2016</div>
+                             <img src="images/malerei/taenzerin.jpg" style="width:100%">
+                             <div class="captiontext">Tänzerin, Acryl auf Leinwand, 2017</div>
                            </div>
 
                            <div class="mySlides6 fade">
-                             <img src="images/sonstiges/frosch_textil.jpg" style="width:100%">
-                             <div class="captiontext">Froschkönigin, Stoffschürze, 2016</div>
+                             <img src="images/malerei/wasserfrau.jpg" style="width:100%">
+                             <div class="captiontext1">Wasserfrau, Aquarell auf Papier, 2017</div>
+                           </div>
+
+                           <div class="mySlides6 fade">
+                             <img src="images/malerei/tanzmandala.jpg" style="width:100%">
+                             <div class="captiontext1">Mandala, Acryl auf Papier, 2016</div>
                            </div>
 
                                <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
@@ -107,40 +110,13 @@
                        <span class="dot6" onclick="currentSlide6(1)"></span>
                        <span class="dot6" onclick="currentSlide6(2)"></span>
                        <span class="dot6" onclick="currentSlide6(3)"></span>
+                       <span class="dot6" onclick="currentSlide6(4)"></span>
                      </div>
 
      </div>
 
 
 </div>
-<script>
-     var slideIndex = 1;
-     showSlides6(slideIndex);
-
-     function plusSlides6(n) {
-       showSlides6(slideIndex += n);
-     }
-
-     function currentSlide6(n) {
-       showSlides6(slideIndex = n);
-     }
-
-     function showSlides6(n) {
-       var i;
-       var slides = document.getElementsByClassName("mySlides6");
-       var dots = document.getElementsByClassName("dot6");
-       if (n > slides.length) {slideIndex = 1}
-       if (n < 1) {slideIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-       }
-       for (i = 0; i < dots.length; i++) {
-           dots[i].className = dots[i].className.replace(" active", "");
-       }
-       slides[slideIndex-1].style.display = "block";
-       dots[slideIndex-1].className += " active";
-     }
-</script>
 <script>
      var slideIndex = 1;
      showSlides6(slideIndex);
